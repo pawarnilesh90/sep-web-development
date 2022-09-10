@@ -1,0 +1,36 @@
+.myCountrylist {
+  background-color: rgb(216, 132, 36);
+  padding: 20PX 20PX 20PX 30PX;
+}
+
+.myCountryListitem {
+  height: 20px;
+  background-color: #d1c2c2;
+  border-bottom: 1px solid #000000;
+  padding: 20px;
+  color: #260aa0;
+}
+
+#us {
+  color: #075a23;
+}
+.myUsersList {
+  height: 300px;
+  overflow: scroll;
+}
+.myNavbar {
+  background-color: #260aa0;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: grey;
+}

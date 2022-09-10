@@ -2,8 +2,36 @@
 <html>
   <head>
     <title>My First Web Page</title>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <style>
+      table, th, td {
+        border: 1px solid #000000;
+        border-collapse: collapse;
+      }
+      th, td {
+        background-color: #5858FA;
+      }
+      ol {
+        background-color: rgb(116, 90, 220);
+        padding: 30PX 20PX 30PX 10PX;
+      }
+      li {
+        height: 30px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #000000;
+        padding: 10px;
+        color: #c32323;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
+    <nav class="myNavbar">
+      <a href="./pages/my-profile.html">My Profile</a> |
+      <a href="./pages/about-us.html">About Us</a> |
+      <a href="./pages/my-achivements.html">My Achivements</a> |
+      <a href="./pages/my-portfolio.html">My Portfolio</a>
+    </nav>
     <h1>This is my website.</h1>
     <h2>This is h2</h2>
     <h3>This is h3</h3>
@@ -15,7 +43,126 @@
       Eveniet debitis necessitatibus asperiores assumenda doloribus, explicabo minima voluptatum repellat eligendi nisi accusamus porro
       placeat nihil distinctio quae ad facere! Laudantium, deserunt.
     </p>
-    <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhb" alt="My Nature's Image" />
-    <img style="border: 2px solid #ff0000; border-radius: 20px;" src="./images/flowers.jpeg" />
+    <table style="width: 100%;">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>contact</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tata Motors</td>
+          <td>Ratan Tata</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>M & M</td>
+          <td>Anand Mahindra</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="margin-top: 30px">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Will</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Michael</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <table style="margin-top: 30px">
+      <tr>
+        <th>Name</th>
+        <td>Virat Kohli</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+    <!-- <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhb" alt="My Nature's Image" /> -->
+    <!-- <img style="border: 2px solid #ff0000; border-radius: 20px;" src="./images/flowers.jpeg" /> -->
+    <div>This is the block level element!!
+       This is new line!!
+      This is my email id: <a href="" mailto="nilesh.pawar@gmail.com">nilesh.pawar@gmail.com</a>Please email me on this.
+      <span>This is my inner Span!!</span>
+      <div>
+        This is my inner division element!!
+        <label>This is my simple label</label>
+
+      </div>
+    </div>
+    <span>This is my inline element</span>
+    <p>This is block level element 2</p>
+    <lable>Ordered List For Technologies: </lable>
+    <ol>
+      <li>HTML</li>
+      <li>CSSS</li>
+      <li>JavaScript</li>
+      <li>Angular</li>
+    </ol>
+
+    <lable>Ordered List For Countries: </lable>
+    <ol class="myCountrylist">
+      <li class="myCountryListitem">India</li>
+      <li class="myCountryListitem" id="us">US</li>
+      <li class="myCountryListitem">Canada</li>
+      <li class="myCountryListitem">UK</li>
+    </ol>
+    <div>Unordered list</div>
+    <ul>
+      <li>Test Match</li>
+      <li>T20</li>
+      <li>One Day</li>
+      <li style="color: pink">Pink Ball Test Match</li>
+    </ul>
+    <div class="myUsersList">
+      <div>My Scollable List: </div>
+      <ul>
+        <li>
+          Nilesh Pawar
+        </li>
+        <li>
+          Anand
+        </li>
+        <li>
+          Bhagyashree
+        </li>
+        <li>
+          vishal
+        </li>
+        <li>
+          Sachin
+        </li>
+        <li>
+          Anil Kumbale
+        </li>
+        <li>
+          Rahul Dravid
+        </li>
+        <li>
+          MS Dhoni
+        </li>
+        <li>
+          Zaheer Khan
+        </li>
+        <li>
+          Yuvraj Singh
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
