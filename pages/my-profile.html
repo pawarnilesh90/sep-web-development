@@ -1,9 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <section>
-            <h1>This is my profile page!!</h1>
-        </section>
-    </body>
+  <head>
+    <!-- CSS -->
+    <style>
+      .formField {
+        margin-bottom: 10px;
+      }
+      input {
+        height: 20px;
+      }
+      .myInputFields {
+        border: 1px solid blue;
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .mySubmitButton {
+        margin-top: 10px;
+        background-color: blue;
+        color: #fff;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 50px;
+      }
+    </style>
+    <!-- JavaScript -->
+    <script>
+      function submitForm() {
+        console.log('My Form is submitted!!');
+        console.log('This is my First name: ', document.getElementById('firstName').value);
+        var name = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        console.log('This is my Full Name: ', name + " " + lastName);
+      }
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>This is my profile page!!</h1>
+      <div>
+        <form>
+          <div class="formField">
+            <label>First Name:</label>
+            <input class="myInputFields"
+              type="text"
+              placeholder="Enter First Name"
+              name="firstName"
+              id="firstName"
+            />
+          </div>
+          <div class="formField">
+            <label>Last Name: </label>
+            <input class="myInputFields"
+              type="text"
+              placeholder="Enter Last Name"
+              name="lastName"
+              id="lastName"
+            />
+          </div>
+          <div class="formField">
+            <lable>Gender</lable>
+            Male: <input type="radio" name="maleGender" /> Female:
+            <input type="radio" name="femaleGender" />
+          </div>
+          <div class="formField">
+            <label>City: </label>
+            Pune: <input type="checkbox" /> Mumbai: <input type="checkbox" />
+          </div>
+          <div class="formField">
+            <label>Skill: </label>
+            <select>
+              <option>Select Any Skill</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="angular">Angular</option>
+            </select>
+          </div>
+          <div class="formField">
+            <lable>Password: </lable>
+            <input class="myInputFields"
+              type="password"
+              name="password"
+              placeholder="Enter a password"
+            />
+          </div>
+          <div class="formField">
+            <label>Description: </label>
+            <textarea class="myInputFields" cols="30" rows="5"> </textarea>
+          </div>
+          <div class="formField">
+            <label>User Profile Picture:</label>
+            <input type="file" name="profileImage" />
+          </div>
+          <div>
+            <button class="mySubmitButton" type="button" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

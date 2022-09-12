@@ -25,12 +25,12 @@
   padding: 5px;
 }
 a {
-  color: #fff;
+  color: rgb(191, 16, 16);
   text-decoration: none;
 }
-a:hover {
+/* a:hover {
   color: red;
 }
 a:active {
   color: grey;
-}
+} */
