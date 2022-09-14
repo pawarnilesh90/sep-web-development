@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script>
+            // Local Storage methods.
+            function addLocalStorageData() {
+                window.localStorage.setItem("user", JSON.stringify({userName: "Nilesh", email: "nilesh@gmail.com"}));
+            }
+            function ShowLocalStoragedata() {
+                console.log("My data gets retrieved: ", JSON.parse(window.localStorage.getItem("user")));
+            }
+            function clearStoragedata() {
+                window.localStorage.removeItem("user");
+            }
+            // Session storage methods.
+            function addSeesionStorageData() {
+                window.sessionStorage.setItem("user", JSON.stringify({userName: "Anand", email: "Anand@gmail.com"}));
+            }
+            function ShowSessionStoragedata() {
+                console.log("My data gets retrieved: ", JSON.parse(window.sessionStorage.getItem("user")));
+            }
+            function clearSessionStoragedata() {
+                window.sessionStorage.removeItem("user");
+            }
+        </script>
+    </head>
+    <body>
+        <header style="background-color: red; padding: 10px; color: #fff;">
+            <nav>
+                <a href="" >Home</a>
+                <a href="" >My Page</a>
+                <a href="" >Users Info</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                This is my main content
+                <div>
+                    <label>Local Storage: </label>
+                    <button onclick="addLocalStorageData();">Store Data</button>
+                    <button onclick="ShowLocalStoragedata();">Retrieve Data</button>
+                    <button onclick="clearStoragedata();">Clear Data</button>
+                </div>
+                <div>
+                    <label>Session Storage: </label>
+                    <button onclick="addSeesionStorageData();">Store Data</button>
+                    <button onclick="ShowSessionStoragedata();">Retrieve Data</button>
+                    <button onclick="clearSessionStoragedata();">Clear Data</button>
+                </div>
+            </section>
+            <aside>
+                This is my side content
+            </aside>
+        </main>
+        <foter style="position: fixed; background-color: blue; bottom: 0px; padding: 10px; width: 100%; color: #fff;">
+            Copywrite @ WWW.xyz.com 
+        </foter>
+    </body>
+</html>
