@@ -23,6 +23,51 @@
         color: #c32323;
         font-weight: bold;
       }
+      .left, .right {
+        width: 20%;
+        background-color: #c32323;
+        height: 200px;
+        float: left;
+      }
+      .main {
+        width: 60%;
+        float: left;
+        background-color: #5858FA;
+        height: 200px;
+      }
+      @media screen and (max-width: 500px) {
+        .left, .right, .main {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 1800px) {
+        .left, .right {
+          width: 20%;
+          background-color: #c32323;
+          height: 200px;
+          float: left;
+        }
+        .main {
+          width: 60%;
+          float: left;
+          background-color: #5858FA;
+          height: 200px;
+        }
+      }
+      @media (min-width: 800px) and (max-width: 1200px) {
+        .left, .right {
+          width: 20%;
+          background-color: #108632;
+          height: 200px;
+          float: left;
+        }
+        .main {
+          width: 60%;
+          float: left;
+          background-color: #d15b12;
+          height: 200px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -45,7 +90,25 @@
       Eveniet debitis necessitatibus asperiores assumenda doloribus, explicabo minima voluptatum repellat eligendi nisi accusamus porro
       placeat nihil distinctio quae ad facere! Laudantium, deserunt.
     </p>
-    <table style="width: 100%;">
+    <picture>
+      <source srcset="./images/Natures_View.jpeg"  media="(max-width: 600px)">
+      <source srcset="./images/flowers.jpeg"  media="(max-width: 1500px)">
+      <img src="./images/Natures_View.jpeg" alt="Nature's image"/>
+    </picture>
+    <h1 style="font-size: 6vw;">This is my VW text</h1>
+    <div style="padding-bottom: 100px; height: 100px;">
+      <div class="left">
+        Left
+      </div>
+      <div class="main">
+        Main
+      </div>
+      <div class="right">
+        Right
+      </div>
+    </div>
+    <p><a href=”mailto:henry.ford@gmail.com”>henry.ford@gmail.com</a>
+    <table style="width: 100%; margin-top: 100px;">
       <thead>
         <tr>
           <th>Company</th>
