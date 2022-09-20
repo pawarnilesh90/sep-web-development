@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-    </head>
+    <title>About us</title>
+    <script>
+        function addInnerHtml() {
+            document.getElementById("myContent").innerHTML = "HTML Content";
+        }
+    </script>
     <body>
         <h3>Welcome to About Us.</h3>
+        <button onclick="addInnerHtml();">Add Content</button>
+        <p id="myContent">
+        </p>
     </body>
 </html>

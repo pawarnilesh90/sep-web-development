@@ -4,16 +4,19 @@
     <title>My First Web Page</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
     <style>
-      table, th, td {
+      table,
+      th,
+      td {
         border: 1px solid #000000;
         border-collapse: collapse;
       }
-      th, td {
-        background-color: #5858FA;
+      th,
+      td {
+        background-color: #5858fa;
       }
       ol {
         background-color: rgb(116, 90, 220);
-        padding: 30PX 20PX 30PX 10PX;
+        padding: 30px 20px 30px 10px;
       }
       li {
         height: 30px;
@@ -23,7 +26,8 @@
         color: #c32323;
         font-weight: bold;
       }
-      .left, .right {
+      .left,
+      .right {
         width: 20%;
         background-color: #c32323;
         height: 200px;
@@ -32,16 +36,19 @@
       .main {
         width: 60%;
         float: left;
-        background-color: #5858FA;
+        background-color: #5858fa;
         height: 200px;
       }
       @media screen and (max-width: 500px) {
-        .left, .right, .main {
+        .left,
+        .right,
+        .main {
           width: 100%;
         }
       }
       @media screen and (max-width: 1800px) {
-        .left, .right {
+        .left,
+        .right {
           width: 20%;
           background-color: #c32323;
           height: 200px;
@@ -50,12 +57,13 @@
         .main {
           width: 60%;
           float: left;
-          background-color: #5858FA;
+          background-color: #5858fa;
           height: 200px;
         }
       }
       @media (min-width: 800px) and (max-width: 1200px) {
-        .left, .right {
+        .left,
+        .right {
           width: 20%;
           background-color: #108632;
           height: 200px;
@@ -77,38 +85,39 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
-    
+
     <h1>This is my website.</h1>
-    <a href="https://marathi.abplive.com/" target="__blank">Go to the ABP Maza Site</a>
+    <a href="https://marathi.abplive.com/" target="__blank"
+      >Go to the ABP Maza Site</a
+    >
     <h2>This is h2</h2>
     <h3>This is h3</h3>
     <h4>This is h4</h4>
     <h5>This is h5</h5>
     <h6>This is h6</h6>
     <p>This is my first paragraph.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Eveniet debitis necessitatibus asperiores assumenda doloribus, explicabo minima voluptatum repellat eligendi nisi accusamus porro
-      placeat nihil distinctio quae ad facere! Laudantium, deserunt.
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet debitis
+      necessitatibus asperiores assumenda doloribus, explicabo minima voluptatum
+      repellat eligendi nisi accusamus porro placeat nihil distinctio quae ad
+      facere! Laudantium, deserunt.
     </p>
     <picture>
-      <source srcset="./images/Natures_View.jpeg"  media="(max-width: 600px)">
-      <source srcset="./images/flowers.jpeg"  media="(max-width: 1500px)">
-      <img src="./images/Natures_View.jpeg" alt="Nature's image"/>
+      <source srcset="./images/Natures_View.jpeg" media="(max-width: 600px)" />
+      <source srcset="./images/flowers.jpeg" media="(max-width: 1500px)" />
+      <img src="./images/Natures_View.jpeg" alt="Nature's image" />
     </picture>
-    <h1 style="font-size: 6vw;">This is my VW text</h1>
-    <div style="padding-bottom: 100px; height: 100px;">
-      <div class="left">
-        Left
-      </div>
-      <div class="main">
-        Main
-      </div>
-      <div class="right">
-        Right
-      </div>
+    <p>This is my element without closing P tag.</p>
+    <a href="">My Link</a>
+    <h1 style="font-size: 6vw">This is my VW text</h1>
+    <div style="padding-bottom: 100px; height: 100px">
+      <div class="left">Left</div>
+      <div class="main">Main</div>
+      <div class="right">Right</div>
     </div>
-    <p><a href=”mailto:henry.ford@gmail.com”>henry.ford@gmail.com</a>
-    <table style="width: 100%; margin-top: 100px;">
+    <p><a href="”mailto:henry.ford@gmail.com”">henry.ford@gmail.com</a></p>
+
+    <table style="width: 100%; margin-top: 100px">
       <thead>
         <tr>
           <th>Company</th>
@@ -160,18 +169,30 @@
     </table>
     <!-- <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhb" alt="My Nature's Image" /> -->
     <!-- Relative Image path -->
-    <img style="border: 2px solid #ff0000; border-radius: 10px;" src="./images/flowers.jpeg" />
-    <img style="border: 2px solid #ff0000; border-radius: 10px;" src="images/flowers.jpeg" />
+    <img
+      style="border: 2px solid #ff0000; border-radius: 10px"
+      alt="my-image"
+      width="100px"
+      height="100px"
+      src="./images/flowers.jpeg"
+    />
+    <img
+      style="border: 2px solid #ff0000; border-radius: 10px"
+      src="images/flowers.jpeg"
+    />
     <!-- Absolute Image path -->
-    <img src="https://www.w3schools.com/images/picture.jpg" alt="Nature Image">
-    <div>This is the block level element!!
-       This is new line!!
-      This is my email id: <a href="" mailto="nilesh.pawar@gmail.com">nilesh.pawar@gmail.com</a>Please email me on this.
+    <img
+      src="https://www.w3schools.com/images/picture.jpg"
+      alt="Nature Image"
+    />
+    <div>
+      This is the block level element!! This is new line!! This is my email id:
+      <a href="" mailto="nilesh.pawar@gmail.com">nilesh.pawar@gmail.com</a
+      >Please email me on this.
       <span>This is my inner Span!!</span>
       <div>
         This is my inner division element!!
         <label>This is my simple label</label>
-
       </div>
     </div>
     <span>This is my inline element</span>
@@ -185,7 +206,7 @@
     </ol>
 
     <lable>Ordered List For Countries: </lable>
-    <ol class="myCountrylist">
+    <ol class="myCountrylist myTestClass">
       <li class="myCountryListitem">India</li>
       <li class="myCountryListitem" id="us">US</li>
       <li class="myCountryListitem">Canada</li>
@@ -199,38 +220,18 @@
       <li style="color: pink">Pink Ball Test Match</li>
     </ul>
     <div class="myUsersList">
-      <div>My Scollable List: </div>
+      <div>My Scollable List:</div>
       <ul>
-        <li>
-          Nilesh Pawar
-        </li>
-        <li>
-          Anand
-        </li>
-        <li>
-          Bhagyashree
-        </li>
-        <li>
-          vishal
-        </li>
-        <li>
-          Sachin
-        </li>
-        <li>
-          Anil Kumbale
-        </li>
-        <li>
-          Rahul Dravid
-        </li>
-        <li>
-          MS Dhoni
-        </li>
-        <li>
-          Zaheer Khan
-        </li>
-        <li>
-          Yuvraj Singh
-        </li>
+        <li>Nilesh Pawar</li>
+        <li>Anand</li>
+        <li>Bhagyashree</li>
+        <li>vishal</li>
+        <li>Sachin</li>
+        <li>Anil Kumbale</li>
+        <li>Rahul Dravid</li>
+        <li>MS Dhoni</li>
+        <li>Zaheer Khan</li>
+        <li>Yuvraj Singh</li>
       </ul>
     </div>
   </body>
