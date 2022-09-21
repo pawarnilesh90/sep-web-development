@@ -28,6 +28,11 @@ a {
   color: rgb(191, 16, 16);
   text-decoration: none;
 }
+h2 {
+  color: #ff0000;
+  font-size: 25px;
+  text-align: left;
+}
 /* a:hover {
   color: red;
 }
