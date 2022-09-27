@@ -98,6 +98,18 @@
         background-repeat: no-repeat;
         width: 100%;
       }
+      .leftDiv {
+        float: left;
+        width: 60%;
+        text-align: center;
+        margin-top: 1em;
+      }
+      .rightDiv {
+        float: right;
+        width: 40%;
+        text-align: center;
+        margin-top: 1em;
+      }
     </style>
   </head>
   <body>
@@ -107,7 +119,28 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
+    <div style="height: 400px; background-color: #f2f2f2;">
+      <form>
+        <div class="leftDiv">
+          <div>
+            <label>First Name</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>Last Name</label>
+            <input type="text">
+          </div>
 
+        </div>
+        <div class="rightDiv">
+          <div>
+            <label>Photo Upload</label>
+            <input type="file">
+          </div>
+        </div>
+      </form>
+      
+    </div>
     <h1>This is my website.</h1>
     <a href="https://marathi.abplive.com/" target="__blank"
       >Go to the ABP Maza Site</a
