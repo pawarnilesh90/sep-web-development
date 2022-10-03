@@ -110,6 +110,47 @@
         text-align: center;
         margin-top: 1em;
       }
+      a:hover {
+        color: #ffffff;
+      }
+      ul.ulListStyle {
+        list-style-type: square;
+      }
+      ol.olListStyle {
+        list-style-type: upper-roman;
+      }
+      .backGroundImgUsingZ-index {
+        position: absolute;
+        z-index: -1;
+      }
+      #myH2 {
+        font-size: 25px;
+        color:rgb(116, 90, 220);
+        text-align: center;
+      }
+      .myPageTitle {
+        text-align: center;
+        font-size: 30px;
+        color: #0000ff;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        color: #00ff00;
+      }
+      p.para3 {
+        text-align: left;
+        font-size: 25px;
+        color: #270695;
+      }
+      div > p {
+        text-align: center;
+        font-size: 20px;
+        color: #b33d0a;
+      }
+      * {
+        /* text-align: center; */
+      }
     </style>
   </head>
   <body>
@@ -119,6 +160,13 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
+    <div>
+      <p>This is para 1</p>
+      <p>This is para 2</p>
+      <p class="para3">This is para 3</p>
+      <p>This is para 4</p>
+      <p>This is para 5</p>
+    </div>
     <div style="height: 400px; background-color: #f2f2f2;">
       <form>
         <div class="leftDiv">
@@ -141,11 +189,11 @@
       </form>
       
     </div>
-    <h1>This is my website.</h1>
+    <h1 class="myPageTitle">This is my website.</h1>
     <a href="https://marathi.abplive.com/" target="__blank"
       >Go to the ABP Maza Site</a
     >
-    <h2 style="">This is h2</h2>
+    <h2 id="myH2">This is h2</h2>
     <h3>This is h3</h3>
     <h4>This is h4</h4>
     <h5>This is h5</h5>
@@ -167,7 +215,10 @@
     </picture>
     <p>This is my element without closing P tag.</p>
     <a href="">My Link</a>
+    <img class="backGroundImgUsingZ-index" src="./images/flowers.jpeg">
     <h1 style="font-size: 6vw">This is my VW text</h1>
+    <h1 style="position: absolute; z-index: 1">This is my VW text 2</h1>
+
     <div style="padding-bottom: 100px; height: 100px">
       <div class="left">Left</div>
       <div class="main">Main</div>
@@ -256,7 +307,7 @@
     <span>This is my inline element</span>
     <p>This is block level element 2</p>
     <lable>Ordered List For Technologies: </lable>
-    <ol>
+    <ol class="olListStyle">
       <li>HTML</li>
       <li>CSSS</li>
       <li>JavaScript</li>
@@ -271,7 +322,7 @@
       <li class="myCountryListitem">UK</li>
     </ol>
     <div>Unordered list</div>
-    <ul>
+    <ul class="ulListStyle">
       <li>Test Match</li>
       <li>T20</li>
       <li>One Day</li>
