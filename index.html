@@ -151,6 +151,26 @@
       * {
         /* text-align: center; */
       }
+      .learningColors {
+        color: rgb(0, 0 , 0);
+      }
+      .learningRgba {
+        color: rgba(255, 0, 0, 0.5);
+      }
+      .form-background {
+        background-image: url('./images/flowers.jpeg');
+        background-repeat: no-repeat;
+        border: 2px dashed #ff0000;
+        border-radius: 10px;
+      }
+      .parent-div {
+        border: 2px solid #ff0000;
+        margin: 20px;
+      }
+      .child-div {
+        margin: 10px;
+        border: 2px solid #ffff00;
+      }
     </style>
   </head>
   <body>
@@ -160,6 +180,10 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
+    <div class="parent-div">
+      Parent Div !!!
+      <div class="child-div">Child div !!</div>
+    </div>
     <div>
       <p>This is para 1</p>
       <p>This is para 2</p>
@@ -167,7 +191,7 @@
       <p>This is para 4</p>
       <p>This is para 5</p>
     </div>
-    <div style="height: 400px; background-color: #f2f2f2;">
+    <div class="form-background" style="height: 400px; background-color: #f2f2f2;">
       <form>
         <div class="leftDiv">
           <div>
@@ -188,6 +212,10 @@
         </div>
       </form>
       
+    </div>
+    <div>
+      <h1 class="learningColors">This will be my colorfull text!!!</h1>
+      <h1 class="learningRgba">This will be my RGBA Text !!!</h1>
     </div>
     <h1 class="myPageTitle">This is my website.</h1>
     <a href="https://marathi.abplive.com/" target="__blank"
