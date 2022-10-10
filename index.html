@@ -171,6 +171,61 @@
         margin: 10px;
         border: 2px solid #ffff00;
       }
+      .heightWidth {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #0000ff;
+        margin-top: 50px;
+      }
+      .maxWidth {
+        max-width: 400px;
+        /* min-width: 400px; */
+        padding-bottom: 30px;
+        padding-right: 40px;
+        padding-left: 100px;
+        background-color: aquamarine;
+        border: 2px solid #ff0000;
+        margin: 30px;
+      }
+      .leftPart {
+        width: 50%;
+        /* float: left; */
+        background-color: #5858fa;
+      }
+      .rightPart {
+        width: 50%;
+        /* float: left; */
+        background-color: #c32323;
+      }
+      .myOutline {
+        /* outline-style: solid;
+        outline-width: 2px;
+        outline-color: #00ff00;
+        outline-offset: 2px; */
+        outline: 2px solid #0000ff;
+      }
+      .text-align {
+        text-align: center;
+        vertical-align: middle;
+        height: 200px;
+        direction: ltr;
+        text-align-last: left;
+      }
+      .decoration {
+        /* text-decoration-line: line-through; */
+        /* text-decoration-line: underline; */
+        /* text-decoration-line: overline; */
+        text-decoration: line-through 5px solid #0000ff;
+      }
+      .text-transform {
+        text-transform: lowercase;
+      }
+      .text-spacing {
+        text-indent: 20px;
+        letter-spacing: 1px;
+        word-spacing: 20px;
+        white-space: pre-line;
+      }
     </style>
   </head>
   <body>
@@ -180,6 +235,31 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
+    
+    <div class="text-spacing">
+      This will be my text where I am learning text spacing properties!!!!!
+    </div>
+    <div class="text-transform">nilesh pawar</div>
+    <h1 class="decoration">Price: 600 /-</h1>
+    <h1 class="">Price: 400 /-</h1>
+    <div class="text-align">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem sed nemo odio optio a eaque aperiam nam, laboriosam obcaecati pariatur libero perferendis, repellat molestias? Tempora vitae nisi ipsam sed!</div>
+    </div>
+    <div>
+      <div class="leftPart">Left</div>
+      <div class="rightPart">Right</div>
+    </div>
+    <div class="myOutline">
+      This will be outline!!!
+    </div>
+    <div>
+      <div class="heightWidth">
+        This is content !!!
+        <div class="maxWidth">
+          This will show max-width !!!
+        </div>
+      </div>
+    </div>
     <div class="parent-div">
       Parent Div !!!
       <div class="child-div">Child div !!</div>
