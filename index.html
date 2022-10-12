@@ -3,6 +3,9 @@
   <head>
     <title>My First Web Page</title>
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/21b1040921.js" crossorigin="anonymous"></script>
     <style>
       table,
       th,
@@ -226,6 +229,25 @@
         word-spacing: 20px;
         white-space: pre-line;
       }
+      .textShadow {
+        font-size: 24px;
+        text-shadow: 2px 2px #ff0000;
+      }
+      .textFonts {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+      }
+      .fa-solid {
+        font-size: 20px;
+        color: #0000ff;
+      }
+      .anchor {
+        background-color: #9f9fa7;
+        text-decoration: dashed;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -235,7 +257,18 @@
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a>
     </nav>
-    
+    <div class="textFonts">
+      Text with shadow !!
+    </div>
+    <a href=" " class="anchor">My Link Styles</a>
+    <div class="textShadow">
+      Text with shadow !!
+    </div>
+    <div>
+      <i class="fa-solid fa-envelope"></i> Email
+      <i class="fa-solid fa-truck-fast"></i> Truck
+      <i class="fa-solid fa-rotate"></i> Refresh
+    </div>
     <div class="text-spacing">
       This will be my text where I am learning text spacing properties!!!!!
     </div>
