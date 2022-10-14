@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .staticElement {
+                background-color: blanchedalmond;
+                position: static;
+                border: 1px solid #ff0000;
+            }
+            .relativeElement {
+                position: relative;
+                border: 2px solid #0000ff;
+                left: 200px;
+                height: 400px;
+                top: 100px
+            }
+            .fixedElement {
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                border: 2px solid #00ff00;
+                background: #f2f2f2;
+            }
+            .absoluteElement {
+                position: absolute;
+                background: #ff0000;
+                border: 2px solid #000;
+                height: 200px;
+                top: 100px;
+                left: 100px;
+            }
+            .stickyElement {
+                position: sticky;
+                top: 20px;
+                border: 2px solid #ff0000;
+                height: 100px;
+            }
+            .parent {
+                position: relative;
+                height: 200px;
+                border: 2px solid #0000ff;
+                z-index: 1;
+                background: #0000ff;
+            }
+            .z-index_2 {
+                position: relative;
+                height: 200px;
+                border: 2px solid #0000ff;
+                z-index: 2;
+                background: #ff0000;
+            }
+            .z-index_3 {
+                position: absolute;
+                height: 200px;
+                left: 100px;
+                background: #f2f2f2;
+                border: 2px solid #0000ff;
+                z-index: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            This is the Parent Div..!!
+        </div>
+        <div class="staticElement">
+            My position is Static !!!!!!
+        </div>
+        <div class="stickyElement">This is the Sticky content !!!</div>
+        <div class="relativeElement">
+            This is the relative element !!!!
+            <div class="absoluteElement">
+                Position absolute element!!!
+            </div>
+        </div>
+        <div class="fixedElement">
+            Position Fixed Element !!!!
+        </div>
+        <div class="parent">
+            This is the Z index 1 !!!
+            <div class="">
+            <div class="z-index_2">
+                This is the Z-index 2 !!!
+                <div class="z-index_3">
+                    This is the z-index 3 !!!
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
