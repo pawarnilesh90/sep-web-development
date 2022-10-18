@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div p {
+                background-color: #6633ee;
+            }
+            div > h3 {
+                background-color: bisque;
+            }
+            div + p {
+                background-color: #ff0000;
+            }
+            div ~ h4 {
+                background-color: darkgreen;
+            }
+            .generalSelector ~ label {
+                background-color: #ffff00;
+            }
+            a:link {
+                color: #000;
+                text-decoration: none;
+            }
+            a:visited {
+                color: rgb(165, 10, 10);
+                text-decoration: none;
+                font-weight: 600;
+            }
+            a:hover {
+                color: #ff00ff;
+                text-decoration: none;
+            }
+            a.myHoverEffect:hover {
+                color: #0000ff;
+                font-size: 25px;
+            }
+            div h5:first-child {
+                background-color: #0000ff;
+                font-size: 20px;
+                color: #fff;
+            } 
+            div h5:last-child {
+                background-color: #98989e;
+                font-size: 20px;
+                color: rgb(48, 18, 218);
+            } 
+            p::first-line {
+                background-color: #0000ff;
+                color: #fff;
+                font-size: 25px;
+            }
+            p::first-letter {
+                font-size: 50px;
+                color: #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div> -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dignissimos ipsam ipsa praesentium quae. Quae, et. Unde, quis? Adipisci iste corporis tempore eius minus vitae consectetur blanditiis tempora quia consequatur!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nihil mollitia commodi minus enim deleniti harum, error qui ipsum cum, tempora laboriosam illo quia quidem itaque ab repellendus. Tempora, enim.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio pariatur assumenda praesentium officiis nobis, exercitationem aliquam provident voluptatem mollitia vitae porro magni doloremque enim. Quod dolores a culpa ea.
+            </p>
+        <!-- </div> -->
+        <div>
+            <div>
+                <h5>First child</h5>
+                <h5>Second child</h5>
+                <h5>Third child</h5>
+                <h5>Forth child</h5>
+                <h5>Fifth child</h5>
+            </div>
+        </div>
+        <div>
+            <a href="">This is the demonstration of pseudo class !!!!</a>
+            <a class="myHoverEffect" href="">This is the demonstration of pseudo class !!!!</a>
+        </div>
+        <div>
+            <p>My First P element</p>
+            <p>My second p element</p>
+            <p>My Third p element</p>
+        </div>
+        <p>My Uinque paragraph</p>
+        <div>
+            <h3>My First H3 element</h3>
+            <h3>My second H3 element</h3>
+            <h3>My Third H3 element</h3>
+        </div>
+        <div>
+            <label>My First p element</label>
+            <label>My second p element</label>
+            <label>My Third p element</label>
+        </div>
+        <p>Testing sibling paragraph.</p>
+        <p>Testing sibling paragraph 2.</p>
+        <div>
+            <h4>This is my header 1</h4>
+            <h4>This is my header 2</h4>
+        </div>
+        <h4>This is my header 3</h4>
+        <h4>This is my header 4</h4>
+        <h4>This is my header 5</h4>
+        <p class="generalSelector">This is sample para.
+            <lable>label 1</lable>
+        </p>
+        <label>label 2</label>
+        <label>label 3</label>
+        <label>label 4</label>
+
+    </body>
+</html>

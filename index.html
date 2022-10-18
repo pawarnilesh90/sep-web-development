@@ -255,6 +255,25 @@
         /* overflow: scroll; */
         overflow: auto;
         padding: 10px;
+        margin-top: 100px;
+        width: 100%;
+      }
+      .floatLeft {
+        float: left;
+        border: 2px solid #ff0000;
+        width: 200px;
+        height: 200px;
+      }
+      .floatRight {
+        float: right;
+        border: 2px solid #ff0000;
+      }
+      .clearLeft {
+        float: left;
+        border: 2px solid #0000ff;
+      }
+      .usingClearProperty {
+        clear: left;
       }
     </style>
   </head>
@@ -264,8 +283,44 @@
       <a href="./pages/about-us.html">About Us</a> |
       <a href="./pages/my-achivements.html">My Achivements</a> |
       <a href="./pages/my-portfolio.html">My Portfolio</a> |
-      <a href="./pages/potionaning.html">Lern Positioning</a>
+      <a href="./pages/potionaning.html">Lern Positioning</a> | 
+      <a href="./pages/selectors.html">Selectors</a>
     </nav>
+    <div style="width: 100%;">
+      <div class="clearLeft">
+        Left content for clear
+      </div>
+      <div class="usingClearProperty">
+        Another content goes next line
+      </div>
+    </div>
+    
+    <div style="width: 100%;">
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Left content
+      </div>
+      <div class="floatLeft">
+        Right Content
+      </div>
+    </div>
     <div class="overflowElement">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatum nobis! A numquam quas animi dolore odit quisquam, accusamus cupiditate nostrum quidem. Adipisci placeat voluptates incidunt? Veniam maiores dolorem temporibus?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum distinctio consequatur minus libero autem, nulla iusto tempore omnis ut nemo, enim porro assumenda beatae vel a eligendi voluptatum illo.
