@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .left {
+                width: 25%;
+                float: left;
+                border: 1px solid #665e5e;
+            }
+            .right {
+                width: 75%;
+                float: right;
+                border: 1px solid #665e5e;
+            }
+            .columns {
+                width: 8.33%;
+                float: left;
+                border: 1px solid #0000ff;
+                height: 200px;
+            }
+            .col-md-4 {
+                width: 33.33%;
+                float: left;
+                border: 2px solid #ff0000;
+                height: 100px;
+            }
+            .col-md-6 {
+                width: 50%;
+                float: left;
+                border: 2px solid #11ff22;
+                height: 300px;
+            }
+            .col-md-12 {
+                width: 100%;
+                float: left;
+            }
+            @media only screen and (max-width: 500px) {
+                .col-md-4 {
+                    width: 100%;
+                    float: left;
+                    border: 2px solid #ff0000;
+                    height: 100px;
+                }
+            }
+            .col-lg-6 {
+                width: 50%;
+                float: left;
+                height: 100px;
+                border: 1px solid #0000ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+        <div>
+            <div class="left">
+                left menu
+            </div>
+            <div class="right">
+                Main Content
+            </div>
+        </div>
+        <div>
+            <div class="columns">Col-1</div>
+            <div class="columns">Col-2</div>
+            <div class="columns">Col-3</div>
+            <div class="columns">Col-4</div>
+            <div class="columns">Col-5</div>
+            <div class="columns">Col-6</div>
+            <div class="columns">Col-7</div>
+            <div class="columns">Col-8</div>
+            <div class="columns">Col-9</div>
+            <div class="columns">Col-10</div>
+            <div class="columns">Col-11</div>
+            <div class="columns">Col-12</div>
+        </div>
+        <div>
+            <div class="col-md-4">Col-1</div>
+            <div class="col-md-4">Col-2</div>
+            <div class="col-md-4">Col-3</div>
+        </div>
+        <div>
+            <div class="col-md-6">
+                Col-6
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        Part - 1
+                    </div>
+                    <div class="col-md-6">
+                        Part - 2
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                Col-6
+                <div class="col-md-12">
+                    <div class="col-lg-6">Col 50</div>
+                    <div class="col-lg-6">col 50</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
