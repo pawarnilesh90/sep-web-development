@@ -36,10 +36,62 @@
         var lastName = document.getElementById('lastName').value;
         console.log('This is my Full Name: ', name + " " + lastName);
       }
+      var operand1 = 10;
+      var operand2 = 30;
+      console.log('Add :', operand1 + operand2);
+      console.log('Subtract: ', operand2 - operand1);
+      console.log('Multiply: ', operand2 * operand1);
+      console.log('Division: ', operand2 / operand1);
+      console.log('Modulus: ', operand2 % operand1);
+      console.log('Modulus with Remainder: ', 30 % 4);
+      // for(let i=0; i<20; i++) {
+      //   if (i%2 != 0) {
+      //     console.log('Odd Number: ', i);
+      //   } 
+      // }
+      // for(let i=20; i>=0; i--) {
+      //   if (i%2 != 0) {
+      //     console.log('Odd Number: ', i);
+      //   } 
+      // }
+      console.log('Equality: ', 20 == 20);
+      if (operand1 == operand2) {
+        console.log('Both are equal');
+      } else {
+        console.log('Both are not equal');
+      }
+      if (operand1 != operand2) {
+        console.log('condition Satisfied.');
+      }
+      if(operand1 < operand2) {
+        console.log('Less Than condition Satisfied.');
+      }
+      var c = 0, d = 30;
+      if (c && d) {
+        console.log('Logical And && :', c*d);
+      }
+      if (c || d) {
+        console.log('Logical Or || :', c*d);
+      }
+      var logicalNot = true;
+      if(!logicalNot) {
+        console.log('Logical ! satisfied');
+      } else {
+        console.log('Logical ! unsatisfied');
+      }
+      var result = operand1 + operand2;
+      console.log('Assignment Operator Result: ', result);
+      let cc = 20;
+      let dd = 20;
+      cc += dd;
+      console.log('Add plus assignment :', cc);
+      operand2 -= operand1;
+      console.log('Add plus substraction :', operand2);
     </script>
   </head>
   <body>
     <section>
+      <div id="result"></div>
       <h1>This is my profile page!!</h1>
       <div>
         <form>
