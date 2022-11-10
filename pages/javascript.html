@@ -126,12 +126,69 @@
         // document.write(src);
         document.getElementById('image').innerHTML = src;
       }
+      function validateForm() {
+        // validation code
+        var firstName = document.getElementById('firstName').value;
+        console.log(firstName);
+        if(firstName !== "") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      function mouseOverFun() {
+        // console.log("OnMouseOver Works!!<br />");
+      }
+      function mouseOutFun() {
+        // console.log("OnMouseOut Works!!<br />");
+      }
+      function triggerOnChange() {
+        console.log('Changed Value: ', document.getElementById('firstName').value);
+      }
+      function getStateList() {
+        var selectedCountry = document.getElementById('country').value;
+        console.log('Selected Country: ', selectedCountry);
+      }
+      function triggerOnSelectEvent() {
+        console.log('On Select Event gets called..!!');
+      }
+      function triggerOnKeyUp() {
+        console.log('Call onkeyUp !!!');
+      }
     </script>
   </head>
   <body>
     <div>
       <button onclick="sayHello()">On Click Event</button>
       <div id="image"></div>
+      <div>---------------------------------------</div>
+      <form onsubmit="return validateForm()">
+        <div>
+          <input type="text" placeholder="First Name" id="firstName" onchange="triggerOnChange()"/>
+        </div>
+        <div>
+          <input type="text" placeholder="Email" onkeyup="triggerOnKeyUp()"/>
+        </div>
+        <div>
+          <label>Select Country</label>
+          <select id="country" onchange="getStateList()" onselect="triggerOnSelectEvent()">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+            <option value="uk">UK</option>
+            <option value="nepal">Nepal</option>
+            <option value="uae">UAE</option>
+          </select>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
     </div>
+    <div>------------------------------------------------</div>
+    <div onmouseover="mouseOverFun()" onmouseout="mouseOutFun()">
+      <div>Checking onMouseout and onMouseover Events</div>
+    </div>
+    <div onselect="triggerOnSelectEvent()">Select this and see the event!!!</div>
   </body>
 </html>

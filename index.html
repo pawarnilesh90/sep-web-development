@@ -280,7 +280,16 @@
         float: left;
       }
     </style>
+    <script>
+      function redirectUserToGoogle() {
+        window.location = "https://www.google.com/";
+      }
+      function onload() {
+        console.log('On Load');;
+      }
+    </script>
   </head>
+  <!-- onload="redirectUserToGoogle()" -->
   <body>
     <nav class="myNavbar">
       <a href="./pages/my-profile.html" target="__blank">My Profile</a> |
@@ -291,7 +300,8 @@
       <a href="./pages/selectors.html">Selectors</a> |
       <a href="./pages/gridview.html">Grid View</a> | 
       <a href="./pages/flexbox.html">FlexBox View</a> |
-      <a href="./pages/javascript.html">JavaScript</a>
+      <a href="./pages/javascript.html">JavaScript</a> |
+      <a onclick="redirectUserToGoogle()">Go To Google</a>
     </nav>
     <div>
       <div class="myGrid">Grid 1</div>
