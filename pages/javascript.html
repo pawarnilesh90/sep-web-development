@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function returnUserDetails() {
+        return 'This is not a active user';
+      }
+      const isUserActive = true;
+      const user = {userName: 'User', role: 'User'};
+      let isActive = isUserActive ? {name: 'Test User', status: 'active'} : false;
+      console.log('Active Result: ', isActive);
+      if (isUserActive) {
+        // this will true
+      } else {
+        // User is Inactive
+      }
+      let nestedTernaryRes = isUserActive ? (user.userName === 'Admin') ? 'Admin' : 'Not Admin' : returnUserDetails();
+      console.log('Nested TernaryRes :', nestedTernaryRes);
+      var myString = "India";
+      myString = 400;
+      if(typeof myString === 'number') {
+        console.log('Multiplication: ', 400 * 2);
+      } else {
+        // else code goes here.
+      }
+      var myArray = [1, 2, 3, 4];
+      var myObj = {name: 'Anand', address: 'Pune'};
+      var myNumber = 3000;
+      var myFloatNumber = 40.30;
+      console.log('Type: ', typeof myFloatNumber);
+      var usertype = 'Admin'; // SuperUser, NormalUser, Guest
+      if (usertype === 'Admin') {
+        console.log('UserType: ', 'Admin');
+      } else if (usertype === 'SuperUser') {
+        console.log('UserType: ', 'SupeUser');
+      } else if (usertype === 'NormalUser') {
+        console.log('UserType: ', 'NormalUser');
+      } else {
+        console.log('UserType: ', 'Guest');
+      }
+      // Switch Case
+      var grade = 'C';
+      var Marks = 0;
+      document.write("Entering switch block<br />");
+      switch (grade) {
+        case 'A': {
+          document.write("Good job<br />");
+          Marks = 90;
+        }
+        break;
+        case 'B': {
+          document.write("Pretty good<br />");
+          Marks = 70;
+        }
+        break;
+        case 'C': {
+          document.write("Passed<br />");
+          Marks = 60;
+        }
+        break;
+        case 'D': {
+          document.write("Not so good<br />");
+          Marks = 50;
+        }
+        break;
+        case 'F': {
+          document.write("Failed<br />");
+          Marks = 0;
+        }
+        break;
+        default:  {
+          document.write("Unknown grade!! Candidate was absent for the Exam! <br />");
+        }
+      }
+      document.write('Final Marrks: ', Marks + '% <br />');
+      document.write("Exiting switch block");
+      var count = 0;
+      document.write('While loop started!! <br />');
+      
+      while(count < 10) {
+        document.write('Count: ', count + '<br />');
+        count++;
+      }
+      var arr = [1, 2, 3, 4, 5];
+      var arrayIndex = 0;
+      while(arrayIndex < arr.length) {
+        document.write('Element Multiplication: ', arr[arrayIndex] *2 +'<br />');
+        arrayIndex++;
+      }
+      var forArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      document.write('For Loop Started !!');
+      for(let index=0; index < forArray.length; index++) {
+        document.write('Element Multiplication with For Loop: ', forArray[index] * 5 +'<br />');
+      }
+      var arrayOfObaject = [
+        {username: 'Test1', age: 23, phone: 46746352345},
+        {username: 'Test2', age: 50, phone: 88765456787},
+        {username: 'Test3', age: 61, phone: 88765456787},
+        {username: 'Test4', age: 70, phone: 88765456787},
+      ];
+      for(var index =0; index < arrayOfObaject.length; index++) {
+        document.write('Users Age: ', arrayOfObaject[index].age + '<br />');
+      }
+      var myObject = {name: 'Anand', userType: 'Admin', roles: ['Admin', 'SupeAdmin'], skills: [
+        'javascript', 'HTML', 'CSS', 'Angular'
+      ]};
+      var arrElement;
+      for(arrElement in myObject) {
+        console.log('Element: ', arrElement);
+        console.log('Element Value: ', myObject[arrElement]);
+      }
+      document.write('--------------------------------------------------------------------------<br/>');
+      function helloJavascript() {
+        document.write('Welcome to Javascript Functions !!! <br />');
+      }
+      helloJavascript();
+      function add(arg1, arg2) { // Argumnets
+        document.write('Addition:', arg1 + arg2 + '<br/ >');
+        return arg1 + arg2;
+      }
+      var addition = add(10, 20); // Parameters
+      document.write('Addition Return Result: ', addition);
+      function sayHello() {
+        console.log('Onclick event called !!');
+        var src = '<img src="../images/flowers.jpeg" />';
+        // document.write(src);
+        document.getElementById('image').innerHTML = src;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="sayHello()">On Click Event</button>
+      <div id="image"></div>
+    </div>
+  </body>
+</html>
