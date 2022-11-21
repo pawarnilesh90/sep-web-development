@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var myString = "This is my First String";
+      document.write("This is my First String");
+      console.log('String Length: ', myString.length);
+      let textString = "<br />We are learning \"Javascript\". This is the First step towards the web development";
+      document.write(textString);
+      console.log('String: ', textString);
+      var singleQuoteString = '<br />It\'s okay';
+      document.write(singleQuoteString);
+      let textDoubleSlashString = "<br />The character \\ is called backslash.";
+      document.write(textDoubleSlashString);
+      var myvar = 'My String';
+      console.log('myvar String: ', myvar);
+      var myvar = 30;
+      console.log('myvar Number: ', myvar);
+      let myLetVar = 'Ravindra Jadeja';
+      console.log(myLetVar);
+      let myLetVar2 = 90;
+      console.log(myLetVar2);
+      let abc = 300;
+      var myInnerVar = 500;
+      console.log('My Intial Value: ', myInnerVar);
+      {
+        let abc = 20;
+        console.log('Inside block abc : ', abc);
+        const myPi = 3.14;
+        console.log('Inside PI: ', myPi);
+        var myInnerVar = 100;
+      }
+      console.log('Outside block abc : ', abc);
+      // console.log('Outside PI: ', myPi);
+      console.log('ouside var :',  myInnerVar);
+      let myName = 'Nilesh';
+      console.log('My name: ', myName);
+      var mySirname;
+      mySirname = 'Pawar';
+      let address;
+      address = 'Pune';
+      var fruits = "Apple, Banana, Kiwi";
+      const sliceRes = fruits.slice(7, 13);
+      console.log('sliceRes :', sliceRes);
+      const subStrRes = fruits.substr(7, 10);
+      console.log('subStrRes: ', subStrRes);
+      var repalceString = "I am leaving in USA. USA is a awesome country.";
+      var repalceResult = repalceString.replace('USA', 'India');
+      console.log('RepalceResult: ', repalceResult);
+      console.log('Repalce All Result: ', repalceString.replaceAll('USA', 'India'));
+      var splitString = "Nilesh Anand Bhagyashree Sachin Rahul";
+      var splitRes = splitString.split(" ");
+      console.log('splitRes :', splitRes);
+      console.log('Index: ', splitString.indexOf('Anil'));
+      const cars = ['Tata', 'Mahindra', 'Volvo', 'Tesla'];
+      console.log(cars[0]);
+      cars[4] = 'Hundai';
+      console.log('Cars: ', cars);
+      const otherCars = [];
+      otherCars[0] = 'Toyota';
+      otherCars[1] = 'Fiat';
+      console.log(otherCars);
+      const newArray = new Array('Tata', 'Mahindra', 'Volvo', 'Tesla');
+      console.log('newArray: ', newArray);
+      cars[0] = 'Toyota';
+      console.log('cars: ', cars);
+      var myObj = {fname: 'Anand', lname: 'Gavraskar', age: 35};
+      console.log('First Name: ', myObj.fname);
+      const arrayObject = [
+        {fname: 'Anand', lname: 'Gavraskar', age: 35, salary: 23323},
+        {fname: 'Nilesh', lname: 'Pawar', age: 32, salary: 454545},
+        {fname: 'Sachin', lname: 'Tendulkar', age: 45, salary: 465333},
+      ];
+      console.log('First Element :',  arrayObject[0].fname, arrayObject[0].lname, arrayObject[0].age);
+      const myNestedArray = [
+        [1, 2, 3, 4],
+        {fname: 'Anand', lname: 'Gavraskar', age: 35},
+        new Date()
+      ];
+      console.log('Nested Array: ', myNestedArray);
+      const myCars = ['Audi', 'Tata', 'Toyota'];
+      console.log('Array Lenght: ', myCars.length);
+      const users = ['Nilesh', 'Anand', 'Bharat', 'Sachin', 'Rahul'];
+      console.log('Sorted Array: ', users.sort());
+      console.log('Last Element: ', users[users.length - 1]);
+      const arrayOfNumbers = [1, 2, 3, 4, 5, 6];
+      const userObject = {name: 'Anand', address: 'Pune'};
+      arrayOfNumbers.forEach((item, index) => {
+        console.log('Multiplied value: ', item * 2);
+        // console.log('Element: ', item, 'Index: ', index);
+      });
+      for(let index = 0; index < arrayOfNumbers.length; index++) {
+        console.log('Multiplication with 5: ', arrayOfNumbers[index] * 5);
+      }
+      var totalSalary = 0;
+      arrayObject.forEach((element) => {
+        console.log('Object Element: ', element.age);
+        totalSalary += element.salary;
+      });
+      console.log('Total Salary: ', totalSalary);
+      console.log('Original Array:',  users);
+      console.log('Element Count: ', users.push('Bhagyashree', 'Vikarm', 'Akash'));
+      console.log('After Push: ', users);
+      console.log(users.pop());
+      console.log('After Pop Operation: ', users);
+      console.log('This an Array :',  Array.isArray(userObject));
+      if(Array.isArray(arrayOfNumbers)) {
+        arrayOfNumbers.forEach((item) => {
+
+        });
+      } else {
+        // arrayOfNumbers.name 
+      }
+      console.log('InstanceOf: ', userObject instanceof Array);
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

@@ -127,6 +127,7 @@
         document.getElementById('image').innerHTML = src;
       }
       function validateForm() {
+        
         // validation code
         var firstName = document.getElementById('firstName').value;
         console.log(firstName);
@@ -155,9 +156,36 @@
       function triggerOnKeyUp() {
         console.log('Call onkeyUp !!!');
       }
+      function saveData() {
+        var firstName = document.getElementById('firstName').value;
+        if(firstName == "") {
+          alert('Please Enter a First Name!!!'); 
+        } else {
+          var confirmResult = confirm('Do you want to save the Data?');
+          if(confirmResult) {
+            console.log('Your Data has been saved successfully!!!');
+            var promptResult = prompt('User Name', 'Enter your name');
+            console.log('Prompt Result: ', promptResult);
+            if(promptResult === firstName) {
+              // save into DB with API
+            }
+          } else {
+            console.log('Nothing will save.!!!');
+          }
+        }
+      }
+      function myAddition(arg1, arg2) {
+        console.log('Addition: ', arg1 + arg2);
+      }
+      var a, b, c;
+      a = void (b=20, c = 30);
+      console.log('A: ', a);
+      console.log('B: ', b);
+      console.log('C: ', c);
     </script>
   </head>
   <body>
+    <a href="javascript:void(0)">Refresh Me!!!</a> <!-- myAddition(10, 20) -->
     <div>
       <button onclick="sayHello()">On Click Event</button>
       <div id="image"></div>
@@ -184,11 +212,13 @@
           <button>Submit</button>
         </div>
       </form>
+      <button onclick="saveData()">Save</button>
     </div>
     <div>------------------------------------------------</div>
     <div onmouseover="mouseOverFun()" onmouseout="mouseOutFun()">
       <div>Checking onMouseout and onMouseover Events</div>
     </div>
     <div onselect="triggerOnSelectEvent()">Select this and see the event!!!</div>
+    <button style="background-color: blue; color: #fff" onclick="window.print()">Print This Page</button>
   </body>
 </html>
